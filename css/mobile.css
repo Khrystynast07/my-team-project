@@ -1,0 +1,143 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .sale {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+/* #region sale */
+
+.sale-title {
+font-weight: 600;
+font-size: 32px;
+line-height: 1;
+letter-spacing: -0.02em;
+color: #0c0c0c;
+margin-bottom: 24px;
+}
+.sale-list {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+ 
+.sale-list .sale-item {
+width: calc((100% - 15px) / 4);
+border: 1px solid rgba(12, 12, 12, 0.05);
+border-radius: 16px;
+overflow: hidden;
+background-color: #f3f3f3;    
+}
+
+
+.sale-description {
+  padding: 48px 28px;
+  width: 335px;
+  min-height: 561px;
+  background-color: #3350e9;
+  border-radius: 30px;
+}
+.descr-title {
+font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+margin-bottom: 10px;
+}
+.descr-title-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.3;
+letter-spacing: -0.02em;
+color: rgba(251, 251, 251, 0.5);
+margin-bottom: 20px;
+}
+.first {
+  text-align: center;
+  padding: 8px 12px;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+border-radius: 8px;
+width: 68px;
+height: 32px;
+background-color: rgba(251, 251, 251, 0.1);
+}
+.second {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: -0.02em;
+text-decoration: line-through;
+color: rgba(251, 251, 251, 0.5);
+}
+ 
+.descr-price-list {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 37px;
+}
+.descr-price-item {
+}
+.descr-subtext {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.3;
+letter-spacing: -0.02em;
+color: rgba(251, 251, 251, 0.7);
+margin-bottom: 28px;
+}
+.descr-wrap {
+}
+.descr-wrap-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+ 
+}
+.descr-wrap-item {
+font-weight: 500;
+font-size: 12px;
+line-height: 1.3;
+color: #fbfbfb;
+text-align: center;
+border: 1px solid rgba(251, 251, 251, 0.2);
+border-radius: 8px;
+padding: 8px 12px;
+}
+/* #endregion sale */

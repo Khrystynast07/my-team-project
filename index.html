@@ -24,19 +24,27 @@
 <body>
     <!--#region sale-->
     <section class="sale">
-        <div class="container">
+        <div class="container sale-container">
         <h2 class="sale-title">Sale</h2>
+
+        <div class="watches-list">
         <ul class="sale-list">
             <li class="sale-item">
               <picture>
+                <!-- Desktop and Tablet screen-->
+                <source
+                media="(mix-width: 768px)"
+                srcset="./images/desktop.img/desk-img1.png 1x, ./images/desktop.img/desk-img12x.png 2x"
+                type="image/png"
+              />
                 <!-- Mobile screen -->
                 <source
                 media="(max-width: 767px)"
-                srcset="./images/mob.img/mob-img1.jpg 1x, ./images/mob.img/mob-img12x.jpg 2x"
-                type="image/jpg"
+                srcset="./images/mob.img/mob-img1.png 1x, ./images/mob.img/mob-img12x.png 2x"
+                type="image/png"
               />
               <img
-                src="./images/desktop.img/desk-img1.jpg"
+                src="./images/desktop.img/desk-img1.png"
                 alt="Watch1"
                 width="96"
                 height="100"
@@ -46,14 +54,20 @@
             </li>
             <li class="sale-item">
               <picture>
+                <!-- Desktop and Tablet screen-->
+                <source
+                media="(mix-width: 768px)"
+                srcset="./images/desktop.img/desk-img2.png 1x, ./images/desktop.img/desk-img22x.png 2x"
+                type="image/png"
+              />
                 <!-- Mobile screen -->
                 <source
                 media="(max-width: 767px)"
-                srcset="./images/mob.img/mob-img2.jpg 1x, ./images/mob.img/mob-img22x.jpg 2x"
-                type="image/jpg"
+                srcset="./images/desktop.img/desk-img2.png 1x, ./images/ 2x"
+                type="image/png"
               />
               <img 
-              src="./images/desktop.img/desk-img2.jpg" 
+              src="./images/desktop.img/desk-img2.png" 
               alt="Watch2"
               width="96"
               height="100"
@@ -63,14 +77,20 @@
             </li>
             <li class="sale-item">
               <picture>
+                <!-- Desktop and Tablet screen-->
+                <source
+                media="(mix-width: 768px)"
+                srcset="./images/desktop.img/desk-img3.png 1x, ./images/desktop.img/desk-img32x.png 2x"
+                type="image/png"
+              />
                 <!-- Mobile screen -->
                 <source
                 media="(max-width: 767px)"
-                srcset="./images/mob.img/mob-img3.jpg 1x, ./images/mob.img/mob-img32x.jpg 2x"
-                type="image/jpg"
+                srcset="./images/mob.img/mob-img3.png 1x, ./images/mob.img/mob-img32x.png 2x"
+                type="image/png"
               />
               <img 
-              src="./images/desktop.img/desk-img3.jpg" 
+              src="./images/desktop.img/desk-img3.png" 
               alt="Watch3"
               width="96"
               height="100"
@@ -81,14 +101,20 @@
 
             <li class="sale-item">
               <picture>
+                <!-- Desktop and Tablet screen-->
+                <source
+                media="(mix-width: 768px)"
+                srcset="./images/desktop.img/desk-img4.png 1x, ./images/desktop.img/desk-img42x.png 2x"
+                type="image/png"
+              />
                 <!-- Mobile screen -->
                 <source
                 media="(max-width: 767px)"
-                srcset="./images/mob.img/mob-img4.jpg 1x, ./images/mob.img/mob-img42x.jpg 2x"
-                type="image/jpg"
+                srcset="./images/mob.img/mob-img4.png 1x, ./images/mob.img/mob-img42x.png 2x"
+                type="image/png"
               />
               <img 
-              src="./images/desktop.img/desk-img4.jpg" 
+              src="./images/desktop.img/desk-img4.png" 
               alt="Watch4"
               width="96"
               height="100"
@@ -97,42 +123,49 @@
             </picture>
             </li>
         </ul>
+        <div class="main-watch">
         <picture>
+          <!-- Desktop and Tablet screen-->
+          <source
+          media="(mix-width: 768px)"
+          srcset="./images/desktop.img/desk-mainwatch.png 1x, ./images/desktop.img/desk-mainwatch.png2x 2x"
+          type="image/png"
+        />
           <!-- Mobile screen -->
           <source
           media="(max-width: 767px)"
-          srcset="./images/mob.img/mob-img5.jpg 1x, ./images/mob.img/mob-img52x.jpg 2x"
-          type="image/jpg"
+          srcset="./images/mob.img/mob-mainwatch.png 1x, ./images/mob.img/mob-mainwatch2x.png 2x"
+          type="image/png"
         />
-        <img 
-        src="./images/desktop.img/desk-img5.jpg" 
+        <img
+        src="./images/desktop.img/desk-mainwatch.png" 
         alt="Watch5"
         width="235"
         height="285"
         loading="lazy"
         />
       </picture>
+    </div>
+    </div>
       <div class="sale-description">
         <h2 class="descr-title">MARQ&<span>&#174;</span> Commander (Gen 2) - Carbon Edition</h2>
         <p class="descr-title-text">Product tag: 706587</p>
-        <ul class="descr-price-list">
-          <li class="descr-price-item first">€1500</li>
-          <li class="descr-price-item second">€3000</li>
-        </ul>
+        <div class="price">
+          <p class="current-price">€1500</p>
+          <p class="incorrect-price">€3000</p>
+        </div>
         <p class="descr-subtext">The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch for adventurers that takes materials and features to the next level. The body of the watch is made of very durable Fused Carbon Fiber material and has a precise AMOLED touch screen. The sensitive touch screen is complemented by buttons that can be used in any conditions.</p>
-        <div class="descr-wrap">
-          <ul class="descr-wrap-list">
-            <li class="descr-wrap-item">Fused carbon fiber</li>
-            <li class="descr-wrap-item">Grade-5 Titanuim</li>
-            <li class="descr-wrap-item">Athlete</li>
-            <li class="descr-wrap-item">Golfer</li>
-            <li class="descr-wrap-item">Commander</li>
-            <li class="descr-wrap-item">Adventurer</li>
+          <ul class="descr-list">
+            <li class="descr-item">Fused carbon fiber</li>
+            <li class="descr-item">Grade-5 Titanuim</li>
+            <li class="descr-item">Athlete</li>
+            <li class="descr-item">Golfer</li>
+            <li class="descr-item">Commander</li>
+            <li class="descr-item">Adventurer</li>
           </ul>
         </div>
 
       </div>
-        </div>
     </section>
   
     <!--#endregion sale-->

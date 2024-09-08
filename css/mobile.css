@@ -21,11 +21,7 @@ body {
   a {
     text-decoration: none;
   }
-  .container {
-    max-width: 320px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
+  
   img {
     display: block;
     max-width: 100%;
@@ -37,6 +33,12 @@ body {
   }
 
 /* #region sale */
+
+.sale-container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
 .sale-title {
   font-weight: 600;
@@ -61,13 +63,11 @@ body {
 }
 .sale-item img {
   padding: 13px 14px;
-
 }
 .main-watch {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background: #f3f3f3;
@@ -137,7 +137,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
- 
 }
 .descr-item {
   font-weight: 500;
@@ -151,30 +150,37 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-    margin: 0 auto;
-  }
+
+.sale-container {
+  max-width: 768px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
 .sale-title {
   margin-bottom: 40px;
   font-size: 48px;
-  line-height: 0.91667;
-}
-.descr-title {
-  font-size: 32px;
-  line-height: 1.125;
-}
-.watches-list {
-  display: flex;
-  margin: auto;
-}
-.main-watch {
-  padding: 80px 112px;
+  line-height: 0.9;
+  margin-bottom: 40px;
 }
 
 .sale-list {
   flex-direction: column;
+  gap: 10px;
+  
+}
+.sale-item {
+  width: 132px;
+  height: 132px;
+}
+.sale-item img {
+  padding: 16px 18px;
+}
+.watches-list {
+  display: flex;
+  justify-content: space-between;
+}
+.main-watch  {
+padding: 80px 112px;
 }
 .price {
   margin-bottom: 30px;
@@ -183,29 +189,62 @@ body {
   font-size: 20px;
   line-height: 1;
 }
+.sale-description {
+  padding: 60px;
+  
+}
+.descr-title {
+  font-size: 32px;
+  line-height: 1.125;
+
+}
 .descr-subtext {
   font-size: 16px;
   line-height: 1.25;
-   margin-bottom: 40px;
+  width: 584px;
+  margin-bottom: 40px;
+}
+.descr-list {
+  width: 398px;
 }
 .descr-item {
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.2;
 }
 }
 
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
+@media screen and (min-width: 1280px) {
+  .sale-container {
+    max-width: 1280px;
     padding: 0 65px;
     margin: 0 auto;
   }
-  .sale-container {
+  .sale-list {
+    margin-right: 20px;
+    justify-content: center;
+  
+  }
+  .sale-item {
+    width: 132px;
+    height: 132px;
+  }
+  .main-watch  {
+    padding: 80px 50px;
+    margin-right: 40px;
+  }
+  .sale-wrap {
     display: flex;
+    justify-content: center;
   }
   .sale-description {
-   
+    width: 530px;
+    
   }
+  .descr-subtext {
+    width: 410px;
+  }
+  
+ 
   
 }
 /* #endregion sale */

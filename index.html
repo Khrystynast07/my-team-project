@@ -18,22 +18,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
 </head>
 <body>
     <!--#region sale-->
-    <section class="sale">
-        <div class="container sale-container">
+    <section class="sale">    
+  <div class="sale-container">
         <h2 class="sale-title">Sale</h2>
+        <div class="sale-wrap">
 
-        <div class="watches-list">
+       <div class="watches-list">
         <ul class="sale-list">
             <li class="sale-item">
               <picture>
                 <!-- Desktop and Tablet screen-->
                 <source
-                media="(mix-width: 768px)"
+                media="(min-width: 768px)"
                 srcset="./images/desktop.img/desk-img1.png 1x, ./images/desktop.img/desk-img12x.png 2x"
                 type="image/png"
               />
@@ -56,14 +55,14 @@
               <picture>
                 <!-- Desktop and Tablet screen-->
                 <source
-                media="(mix-width: 768px)"
+                media="(min-width: 768px)"
                 srcset="./images/desktop.img/desk-img2.png 1x, ./images/desktop.img/desk-img22x.png 2x"
                 type="image/png"
               />
                 <!-- Mobile screen -->
                 <source
                 media="(max-width: 767px)"
-                srcset="./images/desktop.img/desk-img2.png 1x, ./images/ 2x"
+                srcset="./images/mob.img/mob-img2.png 1x, ./images/mob.img/mob-img22x.png 2x"
                 type="image/png"
               />
               <img 
@@ -79,7 +78,7 @@
               <picture>
                 <!-- Desktop and Tablet screen-->
                 <source
-                media="(mix-width: 768px)"
+                media="(min-width: 768px)"
                 srcset="./images/desktop.img/desk-img3.png 1x, ./images/desktop.img/desk-img32x.png 2x"
                 type="image/png"
               />
@@ -98,12 +97,11 @@
               />
             </picture>
             </li>
-
             <li class="sale-item">
               <picture>
                 <!-- Desktop and Tablet screen-->
                 <source
-                media="(mix-width: 768px)"
+                media="(min-width: 768px)"
                 srcset="./images/desktop.img/desk-img4.png 1x, ./images/desktop.img/desk-img42x.png 2x"
                 type="image/png"
               />
@@ -123,12 +121,13 @@
             </picture>
             </li>
         </ul>
+      
         <div class="main-watch">
         <picture>
           <!-- Desktop and Tablet screen-->
           <source
-          media="(mix-width: 768px)"
-          srcset="./images/desktop.img/desk-mainwatch.png 1x, ./images/desktop.img/desk-mainwatch.png2x 2x"
+          media="(min-width: 768px)"
+          srcset="./images/desktop.img/desk-mainwatch.png 1x, ./images/desktop.img/desk-mainwatch2x.png 2x"
           type="image/png"
         />
           <!-- Mobile screen -->
@@ -140,13 +139,13 @@
         <img
         src="./images/desktop.img/desk-mainwatch.png" 
         alt="Watch5"
-        width="235"
-        height="285"
+        width="328"
+        height="398"
         loading="lazy"
         />
       </picture>
     </div>
-    </div>
+  </div>
       <div class="sale-description">
         <h2 class="descr-title">MARQ&<span>&#174;</span> Commander (Gen 2) - Carbon Edition</h2>
         <p class="descr-title-text">Product tag: 706587</p>
@@ -164,10 +163,9 @@
             <li class="descr-item">Adventurer</li>
           </ul>
         </div>
-
+        </div>
       </div>
     </section>
-  
     <!--#endregion sale-->
     
 </body>

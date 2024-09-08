@@ -57,12 +57,21 @@ body {
  
 .sale-item {
   width: calc((100% - 15px) / 4);
-  border: 1px solid rgba(12, 12, 12, 0.05);
+  /* border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 16px;
-  background-color: #f3f3f3;    
+  background-color: #f3f3f3;     */
 }
 .sale-item img {
   padding: 13px 14px;
+}
+.img-wrap {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 16px;
+  background-color: #f3f3f3; 
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+
 }
 .main-watch {
   display: flex;
@@ -72,6 +81,7 @@ body {
   border-radius: 30px;
   background: #f3f3f3;
   margin-bottom: 20px;
+  padding: 50px;
 }
 
 .sale-description {
@@ -165,19 +175,36 @@ body {
 
 .sale-list {
   flex-direction: column;
-  gap: 10px;
-  
+  gap: 10px; 
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.watches-list {
+  margin-bottom: 20px;
 }
 .sale-item {
   width: 132px;
+}
+.main-watch {
+  margin-bottom: 0;
+}
+.sale-item {
+  /* width: 132px;
+  height: 132px; */
+}
+.img-wrap {
   height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .sale-item img {
   padding: 16px 18px;
 }
 .watches-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .main-watch  {
 padding: 80px 112px;
@@ -190,13 +217,11 @@ padding: 80px 112px;
   line-height: 1;
 }
 .sale-description {
-  padding: 60px;
-  
+  padding: 60px;  
 }
 .descr-title {
   font-size: 32px;
   line-height: 1.125;
-
 }
 .descr-subtext {
   font-size: 16px;
@@ -231,6 +256,9 @@ padding: 80px 112px;
   .main-watch  {
     padding: 80px 50px;
     margin-right: 40px;
+  }
+  .watches-list {
+    margin-bottom: 0;
   }
   .sale-wrap {
     display: flex;

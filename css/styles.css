@@ -204,7 +204,6 @@ body {
 }
 .watches-list {
   display: flex;
-  /* justify-content: space-between; */
 }
 .main-watch  {
 padding: 80px 112px;

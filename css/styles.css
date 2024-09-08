@@ -1,36 +1,36 @@
 body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #fff;
-  }
-  ul,
-  ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin: 0;
-  }
-  a {
-    text-decoration: none;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  .sale {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.sale {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /* #region sale */
 
@@ -54,7 +54,7 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
- 
+
 .sale-item {
   width: calc((100% - 15px) / 4);
 }
@@ -64,7 +64,7 @@ body {
 .img-wrap {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 16px;
   background-color: #f3f3f3;
@@ -123,7 +123,7 @@ body {
   text-decoration: line-through;
   color: rgba(251, 251, 251, 0.5);
 }
- 
+
 .price {
   display: flex;
   align-items: center;
@@ -156,77 +156,75 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .sale-container {
+    max-width: 768px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
+  .sale-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 0.9;
+    margin-bottom: 40px;
+  }
 
-.sale-container {
-  max-width: 768px;
-  padding: 0 32px;
-  margin: 0 auto;
-}
-.sale-title {
-  margin-bottom: 40px;
-  font-size: 48px;
-  line-height: 0.9;
-  margin-bottom: 40px;
-}
-
-.sale-list {
-  flex-direction: column;
-  gap: 10px; 
-  margin-right: 20px;
-  margin-bottom: 0;
-}
-.watches-list {
-  margin-bottom: 20px;
-}
-.sale-item {
-  width: 132px;
-}
-.main-watch {
-  margin-bottom: 0;
-}
-.img-wrap {
-  height: 132px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.sale-item img {
-  padding: 16px 18px;
-}
-.watches-list {
-  display: flex;
-}
-.main-watch  {
-padding: 80px 112px;
-}
-.price {
-  margin-bottom: 30px;
-}
- .current-price {
-  font-size: 20px;
-  line-height: 1;
-}
-.sale-description {
-  padding: 60px;  
-}
-.descr-title {
-  font-size: 32px;
-  line-height: 1.125;
-}
-.descr-subtext {
-  font-size: 16px;
-  line-height: 1.25;
-  width: 584px;
-  margin-bottom: 40px;
-}
-.descr-list {
-  width: 398px;
-}
-.descr-item {
-  font-size: 14px;
-  line-height: 1.2;
-}
+  .sale-list {
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .watches-list {
+    margin-bottom: 20px;
+  }
+  .sale-item {
+    width: 132px;
+  }
+  .main-watch {
+    margin-bottom: 0;
+  }
+  .img-wrap {
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sale-item img {
+    padding: 16px 18px;
+  }
+  .watches-list {
+    display: flex;
+  }
+  .main-watch {
+    padding: 80px 112px;
+  }
+  .price {
+    margin-bottom: 30px;
+  }
+  .current-price {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .sale-description {
+    padding: 60px;
+  }
+  .descr-title {
+    font-size: 32px;
+    line-height: 1.125;
+  }
+  .descr-subtext {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 584px;
+    margin-bottom: 40px;
+  }
+  .descr-list {
+    width: 398px;
+  }
+  .descr-item {
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -243,7 +241,7 @@ padding: 80px 112px;
     width: 132px;
     height: 132px;
   }
-  .main-watch  {
+  .main-watch {
     padding: 80px 50px;
     margin-right: 40px;
   }
@@ -255,10 +253,10 @@ padding: 80px 112px;
     justify-content: center;
   }
   .sale-description {
-    width: 530px; 
+    width: 530px;
   }
   .descr-subtext {
     width: 410px;
-  } 
+  }
 }
 /* #endregion sale */
